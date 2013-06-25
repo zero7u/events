@@ -157,5 +157,8 @@ define(function() {
     }
   }
 
+Events.prototype.bind = Events.prototype.addEventListener = Events.prototype.on;
+Events.prototype.unbind = Events.prototype.removeEventListener = Events.prototype.off;
+
   return Events
 })
